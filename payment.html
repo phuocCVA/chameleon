@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">	
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+	<link rel="stylesheet" href="./assets/css/styles.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<title>Chameleon Creative Academy | Courses</title>
+</head>
+
+<body class="payment">
+	<nav class="mt-12">
+		<div class="container flex items-center justify-between py-[18px] px-[25px] border border-solid !border-[#ffffff1a] rounded-[18300px]">
+			<div class="logo">
+				<a href="index.html">
+					<img src="./assets/images/logo.svg" alt="Chameleon Creative Academy">
+				</a>
+			</div>
+			<ul class="flex">
+				<li class="mx-7"><a href="courses.html" class="text-white">Դասընթացներ</a></li>
+				<li class="mx-7"><a href="about-us.html" class="text-white">Մեր մասին</a></li>
+				<li class="mx-7"><a href="payment.html" class="text-white">Առցանց վճարում</a></li>
+				<li class="mx-7"><a href="other.html" class="text-white">Այլ</a></li>
+			</ul>
+			<button class="text-white button--primary">Ընդունելություն</button>
+		</div>
+	</nav>
+	
+	<section class="hero">
+		<div class="container">
+			<div class="behance">
+				<h1>
+					Ուսանոնղերի աշխատաքններին <br>
+					կարող ես ծանոթանալ <br>
+					behance-ում
+				</h1>
+				<a href="#">Դիտել</a>
+			</div>
+			<div class="numbers">
+				<div class="numbers__el">
+					<p class="number">500+</p>
+					<p>Ավարտած ուսանողներ</p>
+				</div>
+				<div class="numbers__el">
+					<p class="number">123+</p>
+					<p>Ավարտած ուսանողներ</p>
+				</div>
+				<div class="numbers__el">
+					<p class="number">89+</p>
+					<p>Ավարտած Նախագծեր</p>
+				</div>
+				<div class="numbers__el">
+					<p class="number">500+</p>
+					<p>Ավարտած ուսանողներ</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="registration">
+		<div class="container">
+			<form class="registration-form" id="registration-form">
+				<p class="title">Գրանցման հայտ</p>
+				<div class="form-group">
+					<label for="name">Անուն Ազգանուն</label>
+					<input type="text" id="name" name="name">
+				</div>
+				<div class="form-group">
+					<label for="phone">Հեռախոսահամար</label>
+					<input type="tel" id="phone" name="phone">
+				</div>
+				<div class="form-group select">
+					<label for="">Նախընտրած գրաֆիկ</label>
+					<select class="selectpicker" name="select-course" id="select-course" title="Ընտրել">
+						<option value="Գրաֆիկ դիզայն դասընթաց">Գրաֆիկ դիզայն դասընթաց</option>
+						<option value="Social Media Marketing (SMM) դասընթաց">Social Media Marketing (SMM) դասընթաց</option>
+						<option value="UI/UX դիզայն դասընթաց">UI/UX դիզայն դասընթաց</option>
+						<option value="Motion դիզայն դասընթաց">Motion դիզայն դասընթաց</option>
+						<option value="Interior դիզայն դասընթաց">Interior դիզայն դասընթաց</option>
+						<option value="Վեբ ծրագրավորում դասընթաց">Վեբ ծրագրավորում դասընթաց</option>
+					</select>
+
+					<label class="mt-6 !mb-[10px]">Նախընտրած գրաֆիկ</label>
+					<div class="schedules-container">
+						<label class="schedule__el">
+							<input type="checkbox" name="schedule" value="14:00">
+							<p class="border-gradient">14:00</p>
+						</label>
+						<label class="schedule__el">
+							<input type="checkbox" name="schedule" value="18:00">
+							<p class="border-gradient">18:00</p>
+						</label>
+						<label class="schedule__el">
+							<input type="checkbox" name="schedule" value="20:00">
+							<p class="border-gradient">20:00</p>
+						</label>
+					</div>
+				</div>
+				<input type="submit" value="Գրանցման հայտ">
+			</form>
+
+			<div class="modal" tabindex="-1" role="dialog" id="confirmation-modal">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<img src="./assets/images/close.svg" alt="Close modal">
+						</button>
+						<div class="modal-body">
+							<img src="./assets/images/valid.svg" alt="">
+							<p class="title">Ձեր հայտը ուղարկված է</p>
+							<p>Մենք կկապվենք Ձեզ հետ 044-233-005 հեռախոսահամարով: </p>
+							<p class="notice">ՈՒՇԱԴՐՈՒԹՅՈՒՆ</p>
+							<p class="notice-content">Տեղեկացնում ենք, որ պարբերաբար զանգերին չպատասխանելու դեպքում դուք այլևս հնարավորություն չեք ունենա սովորելու CC Academy-ում:</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="description">
+		<div class="container">
+			<h1>Lorem Ipsum</h1>
+			<p>
+				UI, user interface (օգտատիրոջ ինտերֆեյս), պատասխանատու է ինտերֆեյսի տեսքի և նրա մեջ գտնվող էլեմենտների համար: Այսպիսով, ինչպես կարելի է եզրակացնել, UX և UI դիզայնները տարբեր են, բայց առանձին չեն գործում: UI, user interface (օգտատիրոջ ինտերֆեյս), պատասխանատու է ինտերֆեյսի տեսքի և նրա մեջ գտնվող էլեմենտների համար: Այսպիսով, ինչպես կարելի է եզրակացնել, UX և UI դիզայնները տարբեր են, բայց առանձին չեն գործում:
+				<br><br>
+				UI, user interface (օգտատիրոջ ինտերֆեյս), պատասխանատու է ինտերֆեյսի տեսքի և նրա մեջ գտնվող էլեմենտների համար: Այսպիսով, ինչպես կարելի է եզրակացնել, UX և UI դիզայնները տարբեր են, բայց առանձին չեն գործում:
+			</p>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="footer__el">
+				<img class="logo" src="./assets/images/logo.svg" alt="Chameleon Creative Academy">
+				<p>Մենք ժամանակակից դիզայներական գործակալություն ենք նոր գաղափարներով և մոտեցումներով:</p>
+			</div>
+			<div class="footer__el">
+				<p class="title">Կոնտակտ</p>
+				<p>
+					Amiryan st. 4/2, Yerevan, AM 0002 <br>
+					hello@ccagency.am <br>
+					+374 44-233-005
+				</p>
+			</div>
+			<div class="footer__el">
+				<p class="title">Հիմնական</p>
+				<a href="#">Գրաֆիկ դիզայն</a>
+				<a href="#">UI/UX դիզայն</a>
+				<a href="#">Motion դիզայն</a>
+				<a href="#">Interior դիզայն</a>
+				<a href="#">Մեր մասին</a>
+			</div>
+			<div class="footer__el">
+				<p class="title">Հետևեք մեզ</p>
+				<a href="#" target="_blank">Behance</a>
+				<a href="#" target="_blank">Instagram</a>
+				<a href="#" target="_blank">Facebook</a>
+				<a href="#" target="_blank">Linkedin</a>
+			</div>
+			<div class="separator"></div>
+			<p class="w-full">@ 2024, CC AGENCY LLC. Development Team.</p>
+		</div>
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.0.4/popper.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+	<script src="./assets/js/registration.js"></script>
+</body>
+</html>

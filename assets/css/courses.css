@@ -1,0 +1,66 @@
+.courses{
+	.courses-list{
+		margin-top: 98px;
+		h1{
+			width: 100%;
+			font-family: 'Montserratarm-Light', sans-serif;
+			font-size: 40px;
+			line-height: 59px;
+			color: #fff;
+			text-align: center;
+			strong{
+				font-family: 'Montserratarm-Medium', sans-serif;
+			}
+		}
+		.courses-list__categories{
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 63px;
+			
+			.category{
+				font-family: 'Montserratarm-Regular', sans-serif;
+				color: #fff;
+				position: relative;
+				cursor: pointer;
+				&.active{
+					background: var(--linear-gradient-primary);
+					background-clip: text;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
+			}
+			span{
+				display: block;
+				width: 4px;
+				height: 4px;
+				border-radius: 8px;
+				background-color: #fff;
+				margin-left: 16px;
+				margin-right: 16px;
+			}
+		}
+		.courses-list__wrapper{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-top: 76px;
+		}
+		.courses-list__load-more{
+			margin-top: 44px;
+			button{
+				display: block;
+				margin: auto;
+				padding: 16px 67px;
+				background: var(--linear-gradient-primary);
+				border-radius: 68px;
+				color: #fff;
+			}
+		}
+	}
+
+	footer{
+		margin-top: 111px;
+	}
+}

@@ -1,0 +1,678 @@
+.single-course{
+	.button--primary{
+		background: linear-gradient(90deg, var(--single-course-linear-gradient) 0%, var(--single-course-linear-gradient--secondary) 100%);
+	}
+	.hero {
+		background-image: url('../images/home-hero-bg.svg');
+		position: relative;
+		color: #fff;
+		.container{
+			width: 100%;
+			position: relative;
+		}
+		.main-content {
+			margin-top: 140px;
+			padding-left: 130px;
+			height: max-content;
+			position: relative;
+			h1 {
+				font-family: 'Montserratarm-Bold', sans-serif;
+				font-size: 128px;
+				line-height: 156px;
+				letter-spacing: 6px;
+				margin-bottom: 13px;
+			}
+			p{
+				font-family: 'Montserratarm-Light', sans-serif;
+				display: flex;
+				align-items: center;
+				margin-top: 64px;
+				span{
+					display: block;
+					width: 22px;
+					height: 1px;
+					background-color: #fff;
+					margin-right: 22px;
+				}
+			}
+			a{
+				display: block;
+				width: max-content;
+				margin-top: 84px;
+			}
+		}
+		.scroll-down{
+			position: absolute;
+			right: 137px;
+			bottom: 18px;
+			display: flex;
+			font-family: 'Montserratarm-Light', sans-serif;
+			img{
+				margin-left: 20px;
+			}
+		}
+		.horizontal-scrolling-texts{
+			margin-top: 263px;
+		}
+	}
+
+	.single-course-infos{
+		margin-top: 150px;
+		color: #fff;
+		.container{
+			display: flex;
+			justify-content: space-between;
+			padding-left: 130px;
+		}
+		.course-details{
+			width: 63%;
+			.course-details__description{
+				padding: 32px;
+				border: 1px solid rgba(49, 50, 53, 1);
+				border-radius: 40px;
+				.title{
+					font-family: 'Montserratarm-SemiBold', sans-serif;
+					font-size: 20px;
+					line-height: 36px;
+					margin-bottom: 16px;
+				}
+				p{
+					font-family: 'Montserratarm-Regular', sans-serif;
+					line-height: 30px;
+				}
+			}
+			.course-details__topics{
+				padding: 32px 32px 0px;
+				border: 1px solid rgba(49, 50, 53, 1);
+				border-radius: 40px;
+				margin-top: 38px;
+				max-height: 550px;
+				display: flex;
+				flex-direction: column;
+				position: relative;
+				.title{
+					font-family: 'Montserratarm-SemiBold', sans-serif;
+					font-size: 20px;
+					line-height: 36px;
+					margin-bottom: 16px;
+				}
+				.documents-download{
+					position: absolute;
+					top: 32px;
+					right: 50px;
+					display: flex;
+					align-items: center;
+					padding: 8px 16px;
+					border-radius: 68px;
+					background: linear-gradient(90deg, var(--single-course-linear-gradient) 0%, var(--single-course-linear-gradient--secondary) 100%);
+					img{
+						margin-right: 7px;
+					}
+					&:focus,
+					&:focus-visible{
+						outline: none;
+					}
+				}
+				p{
+					font-family: 'Montserratarm-Regular', sans-serif;
+					line-height: 30px;
+				}
+				.topics-wrapper{
+					overflow-y: scroll;
+					padding-right: 10px;
+					&::-webkit-scrollbar {
+						width: 8px; /* Width of the scrollbar */
+						border-radius: 40px;
+					}
+					
+					&::-webkit-scrollbar-track {
+						background: rgba(14, 14, 14, 1); /* Color of the track */
+					}
+					
+					&::-webkit-scrollbar-thumb {
+						background: rgba(49, 50, 53, 1); /* Color of the scroll thumb */
+						border-radius: 40px;
+					}
+					
+					&::-webkit-scrollbar-thumb:hover {
+						background: rgba(49, 50, 53, 1); /* Color of the scroll thumb when hovered */
+					}
+				}
+				.topics__el{
+					padding: 16px;
+					border: 1px solid rgba(49, 50, 53, 1);
+					border-radius: 26px;
+					margin-bottom: 16px;
+					p{
+						color: rgba(227, 233, 254, 1);
+						font-size: 14px;
+						span{
+							font-family: 'Montserratarm-Bold', sans-serif;
+							margin-right: 16px;
+						}
+					}
+				}
+			}
+		}
+		.course-cvs{
+			width: 35.5%;
+			position: relative;
+			.title{
+				letter-spacing: 3px;
+				position: absolute;
+				top: -35px;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			.course-cvs__list{
+				width: 100%;
+			}
+			.course-cv{
+				border-width: 1px 1px 16px 1px;
+				border-style: solid;
+				border-color: rgba(49, 50, 53, 1);
+				border-radius: 60px;
+				padding: 39px 29px;
+				.experience{
+					display: flex;
+					align-items: center;
+					img{
+						margin-right: 12px;
+					}
+					span{
+						display: block;
+						&:nth-of-type(1){
+							font-family: 'Montserratarm-Bold', sans-serif;
+							letter-spacing: 1px;
+						}
+						&:nth-of-type(2){
+							font-family: 'Montserratarm-Light', sans-serif;
+							font-size: 12px;
+							line-height: 16px;
+						}
+					}
+				}
+				.avatar{
+					width: 195px;
+					aspect-ratio: 1/1;
+					border-radius: 260px;
+					overflow: hidden;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					margin: 14px auto 0;
+				}
+				.name{
+					margin-top: 24px;
+					font-family: 'Montserratarm-Regular', sans-serif;
+					font-size: 24px;
+					line-height: 29px;
+					letter-spacing: 1.1px;
+					text-transform: uppercase;
+					text-align: center;
+					strong{
+						font-family: 'Montserratarm-ExtraBold', sans-serif;
+					}
+				}
+				.job{
+					font-family: 'Montserratarm-Light', sans-serif;
+					text-align: center;
+					line-height: 30px;
+					letter-spacing: 1.1px;
+				}
+				.description{
+					font-family: 'Montserratarm-Regular', sans-serif;
+					font-size: 14px;
+					line-height: 30px;
+					margin-top: 30px;
+					color: rgba(227, 233, 254, 1);
+				}
+				.work-experience{
+					margin-top: 40px;
+					h4{
+						font-family: 'Montserratarm-SemiBold', sans-serif;
+						line-height: 30px;
+						color: rgba(227, 233, 254, 1);
+						margin-bottom: 15px;
+					}
+					.period{
+						font-family: 'Montserratarm-Regular', sans-serif;
+						line-height: 30px;
+						color: rgba(227, 233, 254, 1);
+					}
+					.position{
+						font-family: 'Montserratarm-Regular', sans-serif;
+						line-height: 30px;
+						color: rgba(106, 107, 110, 1);
+					}
+					.separator{
+						display: block;
+						width: 100%;
+						height: 1px;
+						background-color: rgba(49, 50, 53, 1);
+						margin-bottom: 10px;
+						margin-top: 10px;
+					}
+				}
+				.socials{
+					margin-top: 28px;
+					display: flex;
+					justify-content: center;
+					a{
+						display: block;
+						width: 56px;
+						height: 56px;
+						border-radius: 50%;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						margin-left: 8px;
+						margin-right: 8px;
+						border: 1px solid rgba(49, 50, 53, 1);
+						font-family: 'Montserratarm-Medium', sans-serif;
+						font-size: 20px;
+						line-height: 30px;
+					}
+				}
+			}
+		}
+		.flickity-page-dots{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.dot{
+				background-color: rgba(80, 87, 100, 1);
+				width: 8px;
+				height: 8px;
+				margin: 0 4px;
+				&.is-selected{
+					background-color: #fff;
+					width: 11px;
+					height: 11px;
+				}
+			}
+		}
+	}
+
+	.course-conditions{
+		margin-top: 90px;
+		color: #fff;
+		.container{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		h3{
+			width: 100%;
+			font-family: 'Montserratarm-ExtraLight', sans-serif;
+			font-size: 40px;
+			line-height: 59px;
+			margin-bottom: 50px;
+			text-align: center;
+			strong{
+				font-family: 'Montserratarm-SemiBold', sans-serif;
+			}
+		}
+		.course-conditions__el{
+			display: flex;
+			align-items: center;
+			padding: 32px 38px;
+			border: 1px solid rgba(49, 50, 53, 1);
+			border-radius: 50px;
+			margin-left: 10px;
+			margin-right: 10px;
+			min-width: 369px;
+			p{
+				font-family: 'Montserratarm-ExtraLight', sans-serif;
+				line-height: 22px;
+				margin-left: 22px;
+				span{
+					display: block;
+					&:nth-of-type(1){
+						font-family: 'Montserratarm-Medium', sans-serif;
+						margin-bottom: 7px;
+					}
+				}
+			}
+		}
+	}
+
+	.course-advantage{
+		margin-top: 109px;
+		color: #fff;
+		.container{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		h3{
+			width: 100%;
+			font-family: 'Montserratarm-ExtraLight', sans-serif;
+			font-size: 40px;
+			line-height: 59px;
+			margin-bottom: 50px;
+			text-align: center;
+			strong{
+				font-family: 'Montserratarm-SemiBold', sans-serif;
+			}
+		}
+		.course-advantage__el{
+			display: flex;
+			align-items: center;
+			padding: 32px 116px 32px 90px;
+			border: 1px solid rgba(49, 50, 53, 1);
+			border-radius: 60px;
+			max-width: 1276px;
+			svg{
+				min-width: 54px;
+			}
+			p{
+				font-family: 'Montserratarm-Regular', sans-serif;
+				line-height: 30px;
+				margin-left: 106px;
+				color: rgba(227, 233, 254, 1);
+				span{
+					display: block;
+					&:nth-of-type(1){
+						font-family: 'Montserratarm-SemiBold', sans-serif;
+						font-size: 32px;
+						line-height: 39px;
+						color: #fff;
+						margin-bottom: 16px;
+					}
+				}
+			}
+		}
+	}
+
+	.academy-advantages{
+		margin-top: 93px;
+		.advantages-card.highlight{
+			background: linear-gradient(90deg, var(--single-course-linear-gradient) 0%, var(--single-course-linear-gradient--secondary) 100%);
+		}
+	}
+
+	.registration-banner{
+		margin-top: 211px;
+		color: #fff;
+		h1{
+			font-family: 'Montserratarm-Light', sans-serif;
+			font-size: 48px;
+			line-height: 81px;
+			margin-left: 22px;
+			text-align: center;
+			strong{
+				font-family: 'Montserratarm-Bold', sans-serif;
+			}
+			a{
+				background: linear-gradient(90deg, var(--single-course-linear-gradient) 0%, var(--single-course-linear-gradient--secondary) 100%);
+				background-clip: text;
+				color: transparent;
+				-webkit-background-clip: text;
+			}
+		}
+	}
+
+	.solutions{
+		margin-top: 225px;
+		color: #fff;
+		.container{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		h2{
+			width: 100%;
+			font-family: 'Montserratarm-Light', sans-serif;
+			font-size: 40px;
+			line-height: 59px;
+			text-align: center;
+			strong{
+				font-family: 'Montserratarm-Medium', sans-serif;
+			}
+		}
+		.accordion-solutions{
+			width: 80%;
+			max-width: 1018px;
+			position: relative;
+			margin-top: 50px;
+			color: #fff;
+
+			.accordion-item{	
+				padding: 16px 32px 0px;
+				border: 1px solid rgba(49, 50, 53, 1);
+				border-radius: 40px;	
+				cursor: pointer;
+				margin-bottom: 16px;
+				font-family: 'Montserratarm-Regular', sans-serif;
+				line-height: 24px;
+				transition: border-radius .3s ease-in-out;
+				.accordion-item-header{		
+					position: relative;
+					margin-bottom: 16px;
+					&:after{
+						position: absolute;
+						content: '';
+						background-image: url('../images/cheveron-down.svg');
+						background-repeat: no-repeat;
+						background-size: contain;
+						width: 12px;
+						height: 6px;
+						background-position: center;
+						right: 0;
+						top: 45%;
+						transition: all .3s ease-in-out;
+					}
+				}
+				.collapse{
+					&.show{
+						visibility: visible;
+					}
+					p{
+						color: #fff;
+						margin-bottom: 16px;
+					}
+				}
+			}
+		}
+	}
+
+	.apply{
+		margin-top: 238px;
+		color: #fff;
+		h3{
+			font-family: 'Montserratarm-Bold', sans-serif;
+			font-size: 32px;
+			line-height: 44px;
+			text-align: center;
+			span{
+				background: linear-gradient(90deg, var(--single-course-linear-gradient) 0%, var(--single-course-linear-gradient--secondary) 100%);
+				background-clip: text;
+				color: transparent;
+				-webkit-background-clip: text;
+			}
+		}
+		.description{
+			font-family: 'Montserratarm-Light', sans-serif;
+			font-size: 24px;
+			line-height: 44px;
+			text-align: center;
+			max-width: 1251px;
+			margin: 57px auto 0;
+			strong{
+				font-family: 'Montserratarm-SemiBold', sans-serif;
+			}
+		}
+		.apply-steps{
+			margin-top: 88px;
+			display: flex;
+			justify-content: space-between;
+			.apply-steps__card{
+				width: 32.5%;
+				padding: 40px;
+				border: 1px solid rgba(49, 50, 53, 1);
+				border-radius: 80px;
+				.title{
+					font-family: 'Montserratarm-Bold', sans-serif;
+					font-size: 20px;
+					line-height: 24px;
+					margin-top: 26px;
+				}
+				.details{
+					font-family: 'Montserratarm-Light', sans-serif;
+					font-size: 14px;
+					line-height: 25px;
+					margin-top: 16px;
+				}
+			}
+		}
+		.apply-notif{
+			margin-top: 57px;
+			display: flex;
+			align-items: center;
+			padding: 42px 56px;
+			border: 1px solid rgba(49, 50, 53, 1);
+			border-radius: 50px;
+			position: relative;
+			&:before,
+			&:after{
+				opacity: 1;
+				border-radius: 50px;
+			}
+			&:before{
+				background: linear-gradient(90deg, var(--single-course-linear-gradient) 0%, var(--single-course-linear-gradient--secondary) 100%);
+			}
+			svg{
+				min-width: 53px;
+				z-index: 3;
+			}
+			p{
+				font-family: 'Montserratarm-Regular', sans-serif;
+				margin-left: 73px;
+				z-index: 3;
+				span{
+					display: block;
+					&:nth-of-type(1){
+						font-family: 'Montserratarm-SemiBold', sans-serif;
+						font-size: 32px;
+						line-height: 39px;
+						margin-bottom: 13px;
+					}
+				}
+			}
+		}
+	}
+
+	.next-groups{
+		margin-top: 253px;
+		color: #fff;
+		.container{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.title{
+			width: 100%;
+			font-family: 'Montserratarm-SemiBold', sans-serif;
+			line-height: 25px;
+		}
+		.next-groups__card{
+			margin-top: 30px;
+			padding: 40px;
+			border: 1px solid rgba(49, 50, 53, 1);
+			border-radius: 40px;
+			margin-right: 20px;
+			min-width: 369px;
+			p{
+				font-family: 'Montserratarm-Light', sans-serif;
+				font-size: 20px;
+				line-height: 25px;
+				margin-bottom: 16px;
+				strong{
+					font-family: 'Montserratarm-Bold', sans-serif;
+				}
+				&.smaller{
+					font-size: 14px;
+					line-height: 17px;
+				}
+			};
+			.separator{
+				display: block;
+				width: 100%;
+				height: 1px;
+				background-color: rgba(49, 50, 53, 1);
+				margin-bottom: 16px;
+			}
+			.progress{
+				height: 16px;
+				background-color: rgba(49, 50, 53, 1);
+				border-radius: 180px;
+				position: relative;
+				display: flex;
+				align-items: center;
+				span{
+					font-family: 'Montserratarm-Medium', sans-serif;
+					font-size: 14px;
+					line-height: 17px;
+					color: rgba(0, 7, 15, 1);
+					margin-left: 57%;
+					z-index: 2;
+				}
+				&:before{
+					content: '';
+					position: absolute;
+					left: 0;
+					top: 0;
+					height: 100%;
+					width: 70%;
+					border-radius: 180px;
+					background-color: rgba(217, 217, 217, 1);
+				}
+			}
+		}
+	}
+
+	.registration{
+		margin-top: 82px;
+		color: #fff;
+		.container{
+			display: flex;
+			align-items: center;
+		}
+		.registration-content--left{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: 40%;
+			aspect-ratio: 1/1;
+			max-width: 628px;
+			padding: 73px 20px 73px 73px;
+			border-radius: 60px;
+			background: linear-gradient(90deg, var(--single-course-linear-gradient) 0%, var(--single-course-linear-gradient--secondary) 100%);
+
+			h1 {
+				font-family: 'Montserratarm-Black', sans-serif;
+				font-size: clamp(32px, 4vw, 64px);
+				line-height: 81px;
+				color: white;
+				margin-bottom: 13px;
+				&.animate-text{
+					font-family: 'Montserratarm-Light', sans-serif;
+				}
+			}
+		}
+
+		.registration-content--right{
+			flex: 1;
+			margin-left: 20px;
+			.registration-form{
+				input[type="submit"]{
+					background: linear-gradient(90deg, var(--single-course-linear-gradient) 0%, var(--single-course-linear-gradient--secondary) 100%);
+				}
+			}
+		}
+	}
+
+	.partners{
+		margin-top: 83px;
+	}
+}

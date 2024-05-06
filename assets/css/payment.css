@@ -1,0 +1,72 @@
+.payment{
+	color: #fff;
+	.hero{
+		padding-top: 135px;
+		padding-bottom: 120px;
+		background-image: url('../images/home-hero-bg.svg');
+		position: relative;
+		.behance{
+			width: 100%;
+			border-radius: 60px;
+			padding: 111px 124px;
+			background-image: url('../images/payment/payment-img.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			h1{
+				font-family: 'Montserratarm-Bold', sans-serif;
+				font-size: 48px;
+				line-height: 59px;
+			}
+			a{
+				display: block;
+				width: max-content;
+				margin-top: 27px;
+				padding: 20px 32px;
+				border-radius: 68px;
+				background: var(--linear-gradient-primary);
+				font-family: 'Montserratarm-Regular', sans-serif;
+				color: #fff;
+				&:hover{
+					text-decoration: none;
+				}
+			}
+		}
+		.numbers{
+			margin-top: 144px;
+			display: flex;
+			.numbers__el{
+				width: 25%;
+				p{
+					font-family: 'Montserratarm-Regular', sans-serif;
+					&.number{
+						font-family: 'Montserratarm-Bold', sans-serif;
+						font-size: 64px;
+						line-height: 78px;
+						margin-bottom: 10px;
+					}
+				}
+			}
+		}
+	}
+
+
+	.description{
+		margin-top: 170px;
+		.container{
+			max-width: 1270px;
+			padding: 48px 80px;
+			border: 1px solid rgba(49, 50, 53, 1);
+			border-radius: 60px;
+			h1{
+				font-family: 'Montserratarm-SemiBold', sans-serif;
+				font-size: 32px;
+				line-height: 39px;
+				margin-bottom: 16px;
+			}
+			p{
+				font-family: 'Montserratarm-Regular', sans-serif;
+				line-height: 30px;
+			}
+		}
+	}
+}

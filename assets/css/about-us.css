@@ -1,0 +1,80 @@
+.about-us{
+	color: #fff;
+	h1{
+		font-family: 'Montserratarm-Bold', sans-serif;
+		font-size: 64px;
+		line-height: 78px;
+		max-width: 955px;
+		margin: 0 auto 51px;
+	}
+	.hero{
+		margin-top: 126px;
+		margin-left: 70px;
+		p{
+			font-family: 'Montserratarm-Regular', sans-serif;
+			line-height: 28px;
+			max-width: 955px;
+			margin: auto;
+		}
+	}
+
+	.event{
+		margin-top: 235px;
+		h1{
+			max-width: 1031px;
+			text-align: center;
+		}
+		.event__images {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			img{
+				height: 369px;
+				margin-bottom: 11px;
+			}
+			.double-height{
+				height: 749px;
+				margin-right: 22px;
+			}
+			.double-height + div{
+				flex: 1;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				img{
+					width: 369px;
+					&:nth-of-type(1),
+					&:last-of-type{
+						width: 62%;
+					}
+				}
+			}
+		}
+	}
+
+	.our-mission{
+		margin-top: 160px;
+		h1{
+			max-width: max-content;
+		}
+		.our-mission__video{
+			width: 90%;
+			margin: auto;
+			position: relative;
+			img{
+				width: 100%;
+				height: auto;
+				aspect-ratio: 1.6/1;
+				border-radius: 60px;
+				&.play-icon{
+					width: auto;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translateX(-50%) translateY(-50%);
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
